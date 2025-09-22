@@ -1,7 +1,7 @@
 // Mensajes únicos por flor
 const messages = [
   " Una flor para ti, Joshi, pq eres bot ✨",
-  " Como este jardín, me recontra agradas",
+  " Como este jardín me agradas, bn bonito",
   " Gracias por tus dibujito, me gustó aunque no sea una girlxd",
   " Me gusta conversar contigo c:",
   " Tqm, bot 🌸",
