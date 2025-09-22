@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jardín para ti 🌸</title>
+  <link rel="stylesheet" href="jardin.css">
+</head>
+<body>
+  <div id="sky">
+    <div id="sun"></div>
+    <div id="clouds"></div>
+  </div>
+
+  <div id="tree">
+    <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+      <!-- Tronco -->
+      <rect x="85" y="150" width="30" height="100" fill="#8b5a2b" rx="5" />
+
+      <ellipse cx="100" cy="140" rx="80" ry="50" fill="url(#leafGradient)" />
+      <ellipse cx="70" cy="130" rx="60" ry="40" fill="url(#leafGradient)" />
+      <ellipse cx="130" cy="130" rx="60" ry="40" fill="url(#leafGradient)" />
+      <ellipse cx="100" cy="100" rx="50" ry="35" fill="url(#leafGradient)" />
+      <ellipse cx="120" cy="160" rx="50" ry="35" fill="url(#leafGradient)" />
+      <ellipse cx="80" cy="160" rx="50" ry="35" fill="url(#leafGradient)" />
+
+      <defs>
+        <radialGradient id="leafGradient" cx="50%" cy="50%" r="60%">
+          <stop offset="0%" stop-color="#ff9aa2"/>
+          <stop offset="50%" stop-color="#ffb347"/>
+          <stop offset="100%" stop-color="#32cd32"/>
+        </radialGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <div id="grass"></div>
+
+  <div id="garden"></div>
+
+  <canvas id="petals"></canvas>
+
+  <div id="message-overlay" class="hidden">
+    <div class="message-box">
+      <p id="message-text"></p>
+      <button id="close-button">Cerrar</button>
+    </div>
+  </div>
+
+  <div id="gallery-overlay" class="hidden">
+    <div class="gallery-box">
+      <h2>🌳 Recuerdos 🌸</h2>
+      <div class="gallery-grid">
+        <img src="img/img1.png" alt="Imagen 1">
+        <img src="img/img2.png" alt="Imagen 2">
+        <img src="img/img3.png" alt="Imagen 3">
+        <img src="img/img4.png" alt="Imagen 4">
+        <img src="img/img5.png" alt="Imagen 5">
+        <img src="img/img6.png" alt="Imagen 6">
+        <img src="img/img7.png" alt="Imagen 7">
+        <img src="img/img8.png" alt="Imagen 8">
+        <img src="img/img9.png" alt="Imagen 9">
+      </div>
+      <button id="close-gallery">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="jardin.js"></script>
+</body>
+</html>
